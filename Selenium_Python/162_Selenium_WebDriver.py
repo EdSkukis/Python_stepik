@@ -1,0 +1,14 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+patc_chromedrie = executable_path="c:/chromedrive/chromedriver.exe"
+
+
+link = "http://suninjuly.github.io/simple_form_find_task.html"
+browser = webdriver.Chrome(patc_chromedrie)
+browser.get(link)
+button = browser.find_element(By.ID, "submit_button")
+button.click()
+
+# закрываем браузер после всех манипуляций
+browser.quit()
