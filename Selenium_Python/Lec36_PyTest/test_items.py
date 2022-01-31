@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 link = " http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
-def test_guest_should_see_login_link_pass(browser):
+def test_language_support(browser):
     browser.get(link)
     #time.sleep(5)
     buttom = browser.find_element(By.CSS_SELECTOR,'button.btn')
